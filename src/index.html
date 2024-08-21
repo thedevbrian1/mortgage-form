@@ -5,11 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+    <title>Mortgage repayment form</title>
 </head>
 
 <body>
-    <h1 class="text-red-500">Mortgage repayment form</h1>
+    <main>
+        <div class="px-6">
+            <h1 class="text-brand-forest-blue font-semibold text-2xl mt-16">Mortgage repayment form</h1>
+            <button class="mt-2 capitalize underline text-teal-700">clear all</button>
+            <form action="" class="mt-6 space-y-4">
+                <div>
+                    <label for="mortgage-amount" class="text-teal-700">Mortgage amount</label>
+                    <input type="number" id="mortgage-amount"
+                        class="border border-teal-700 rounded text-gray-800 px-2 py-1 block w-full">
+                </div>
+
+                <div>
+                    <label class="text-teal-700">
+                        Mortgage term
+                        <input type="text" class="border border-teal-700 rounded text-gray-800 px-2 py-1 block w-full">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="interest" class="text-teal-700">Interest rate</label>
+                    <input type="text" id="interest"
+                        class="border border-teal-700 rounded text-gray-800 px-2 py-1 block w-full">
+                </div>
+
+                <div>
+                    <div>
+                        <label class="text-teal-700">
+                            <input type="radio" name="mortgage-type" value="repayment">
+                            Repayment
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="text-teal-700">
+                            <input type="radio" name="mortgage-type" id="" value="interest-only">
+                            Interest only
+                        </label>
+                    </div>
+                </div>
+
+                <button
+                    class="bg-brand-luminous-green text-gray-700 rounded-3xl px-6 py-3 w-full font-semibold flex items-center justify-center gap-2">
+                    <img src="../images/icon-calculator.svg" alt="">
+                    Calculate repayments
+                </button>
+            </form>
+        </div>
+
+        <div class="w-full bg-brand-forest-blue mt-12 flex flex-col items-center p-8 text-white text-center">
+            <img src="../images/illustration-empty.svg" alt="">
+            <h2 class="font-semibold text-2xl mt-2">Results shown here</h2>
+            <p class="mt-4 text-gray-300">Complete the form and click "calculate repayments" to see what your monthly
+                repayments would
+                be.</p>
+        </div>
+    </main>
+
 </body>
 
 </html>
