@@ -9,10 +9,13 @@
 </head>
 
 <body>
-    <main>
+    <main class="lg:grid lg:grid-cols-2 lg:gap-4 xl:max-w-6xl mx-auto">
         <div class="px-6">
-            <h1 class="text-brand-forest-blue font-semibold text-2xl mt-16">Mortgage repayment form</h1>
-            <button class="mt-2 capitalize underline text-teal-700">clear all</button>
+            <div class="lg:flex lg:justify-between mt-16 items-center">
+                <h1 class="text-brand-forest-blue font-semibold text-2xl lg:text-3xl">Mortgage repayment form</h1>
+                <button class="mt-2 capitalize underline text-teal-700">clear all</button>
+
+            </div>
             <form action="" class="mt-6 space-y-4">
                 <div>
                     <label for="mortgage-amount" class="text-teal-700">Mortgage amount</label>
@@ -57,7 +60,8 @@
             </form>
         </div>
 
-        <div class="w-full bg-brand-forest-blue mt-12 flex flex-col items-center p-8 text-white text-center">
+        <div
+            class="w-full bg-brand-forest-blue mt-12 flex flex-col items-center p-8 text-white text-center lg:rounded-bl-[50px]">
             <img src="../images/illustration-empty.svg" alt="">
             <h2 class="font-semibold text-2xl mt-2">Results shown here</h2>
             <p class="mt-4 text-gray-300">Complete the form and click "calculate repayments" to see what your monthly
